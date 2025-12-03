@@ -290,6 +290,11 @@ header nav .icons a:hover {
         opacity: 70%;
     }
 }
+.about .btn{
+    &:hover{
+        opacity: 60%;
+    }
+}
 
 .hero .div_img {
     width: 40%;
@@ -753,6 +758,41 @@ header nav .icons a:hover {
     }
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+    .projects .project_box {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .projects .project_box.project_box2 {
+        flex-direction: column;
+    }
+
+    .projects .project_box img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .projects .project_box .text {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .projects .project_box .text h3 a {
+        font-size: 28px;
+    }
+
+    .projects .project_box .text p {
+        font-size: 15px;
+        margin: 15px 0 35px;
+    }
+
+    .projects .project_box .text .link {
+        margin: 0 auto;
+    }
+}
 @media (max-width:600px) {
     .bg-lines span:nth-child(even) {
         display: none;
